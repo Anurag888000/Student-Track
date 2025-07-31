@@ -17,7 +17,16 @@ mongoose
   .catch((err) => console.error("MongoDB connection error:", err));
 
 // API Routes
-app.get("/", (req, res) => res.send("LMS Backend API is running...")); // Health check
+app.get("/", (req, res) => {
+  res.send(`
+    <h2>LMS Backend API is running...</h2>
+    <p>To view the frontend, click here: 
+      <a href="https://student-course-track.netlify.app/" target="_blank">
+        Open Student Course Tracker
+      </a>
+    </p>
+  `);
+});
 app.use("/api/courses", require("./routes/courses"));
 app.use("/api/enrollments", require("./routes/enrollments"));
 
