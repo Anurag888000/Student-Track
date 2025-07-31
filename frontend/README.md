@@ -41,5 +41,37 @@ A full-stack student course tracking platform where users can browse, enroll in,
 ### 1️⃣ Clone the Repositories
 
 ```bash
-git clone https://github.com/Anurag888000/student-track-frontend.git
-git clone https://github.com/Anurag888000/student-track-backend.git
+git clone https://github.com/Anurag888000/Student-Track.git
+---
+
+## 🔧 Set Up Backend
+
+```bash
+# Clone the backend repository
+git clone https://github.com/Anurag888000/Student-Track.git
+cd student-track-backend
+
+# Install dependencies
+npm install
+
+Create a .env file in the backend root:
+MONGO_URI=mongodb+srv://Anurag:Anurag@cluster0.tkomsbo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+PORT=5000
+STUDENT_ID=dummyStudent123
+
+# Start the backend server
+npm run dev
+
+# Clone the frontend repository
+git clone https://github.com/Anurag888000/Student-Track.git
+cd Student-Track/frontend
+
+# Install dependencies
+npm install
+
+Create a .env file in the frontend root:
+VITE_API_URL=https://student-track-vrfb.onrender.com
+
+# Start the frontend dev server
+npm run dev
+
