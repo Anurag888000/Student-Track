@@ -36,7 +36,6 @@ A full-stack student course tracking platform where users can browse, enroll in,
 
 ---
 
-## 🧑‍💻 Local Setup
 
 ### 1️⃣ Clone the Repositories
 
