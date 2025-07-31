@@ -60,7 +60,7 @@ PORT=5000
 STUDENT_ID=dummyStudent123
 
 # Start the backend server
-npm run dev
+node index.js
 
 # Clone the frontend repository
 git clone https://github.com/Anurag888000/Student-Track.git
